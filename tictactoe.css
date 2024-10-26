@@ -1,16 +1,36 @@
 body{
-    background-color: #7CB694;
+    /*background-color: #7CB694;*/
+    background-image: url(tictactoe.jpg);
+    background-size: cover;
+    background-position: -20px;
+}
+#deco{
+    height: 585px;
+    width: 585px;
+    border-radius: 10px;
+    background-color: rgba(74, 74, 74, 0.542);
+    position: absolute;
+    z-index: -1;
+    margin-top: 55px;
+    margin-left: 485px;
+}
+#main{
+    margin-top: 50px;
 }
 #heading{
     font: italic;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    color: #000000;
+    color: #E0E0E0;
+    padding-right: 35px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.67);
 }
 #game{
     display: flex;
     justify-content: center;
     height: 500px;
+    padding-right: 10px;
 }
 #game1{
     width: 500px;
@@ -20,7 +40,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 .btn{
     width: 155.6px;
@@ -30,19 +50,19 @@ body{
     box-shadow: 0 0 16px rgba(0,0,0,0.3);
     font-size: 80px;
     font: italic;
-    color: #8B1E3F;
+    color: #393535;
 }
 #reset{
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 #reset1{
     width: 110px;
     height: 40px;
     font-size: large;
-    color: #fff;
-    background-color: #161316;
+    color: #f4f4f4;
+    background-color: #2C2C2C;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 16px rgba(0,0,0,0.3);

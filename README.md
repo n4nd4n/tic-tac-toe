@@ -15,7 +15,7 @@ This project is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript.
 <br>
 <b>Responsive Design:</b> Works on both desktop and mobile browsers.
 <br>
->b>Interactive Gameplay:</b> Users can click on the grid to mark their symbols.
+<b>Interactive Gameplay:</b> Users can click on the grid to mark their symbols.
 <br>
 <b>Game Logic:</b> Automatically checks for win conditions or draws after each move.
 <br>

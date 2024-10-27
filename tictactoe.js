@@ -26,13 +26,14 @@ function handleClick(index) {
   if (!gameOver && !board[index]) {
     board[index] = move;
     btns[index].innerText = move;
+    
     let winner = checkWin();
     if (winner) {
-      alert(`${winner} wins!`);
-      gameOver = true;
+      gameOver = true; // Mark game over before alert
+      setTimeout(() => alert(`${winner} wins!`), 100); // Delay alert
     } else if (board.every(cell => cell)) {
-      alert("It's a draw!");
-      gameOver = true;
+      gameOver = true; // Mark game over before alert
+      setTimeout(() => alert("It's a draw!"), 100); // Delay alert
     } else {
       move = move === "X" ? "O" : "X"; // Toggle between X and O
     }

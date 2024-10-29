@@ -32,7 +32,7 @@ body{
 }
 #game{
     width: 500px;
-    height: 100%;
+    height: 500px;
     /*background-color: gray;*/
     display: flex;
     flex-wrap: wrap;
@@ -64,4 +64,63 @@ body{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 16px rgba(0,0,0,0.3);
+}
+@media (min-width: 320px) and (max-width: 700px){
+    body{
+        background-image: url(tictactoe.jpg);
+        background-size: cover;
+        background-position: -20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    #deco{
+        display: flex;
+        flex-direction: column;/*flex direction makes the elements inside container get placed in row or column by default it is row.*/ 
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.271);
+    }
+    #heading b{
+        font: italic;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #E0E0E0;
+        text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    }
+    #game{
+        width: 200px;
+        height: 200px;
+        /*background-color: gray;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+    .btn{
+        width: 64px;
+        height: 64px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 16px rgba(0,0,0,0.3);
+        font-size: 10px;
+        font: italic;
+        color: #393535;
+    }
+    #reset1{
+        width: 64px;
+        height: 20px;
+        font-size: small;
+        color: #f4f4f4;
+        background-color: #2C2C2C;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 16px rgba(0,0,0,0.3);
+    }
 }

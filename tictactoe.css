@@ -1,38 +1,36 @@
+*{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    /*background-color: #7CB694;*/
     background-image: url(tictactoe.jpg);
     background-size: cover;
     background-position: -20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 #deco{
+    display: flex;
+    flex-direction: column;/*flex direction makes the elements inside container get placed in row or column by default it is row.*/ 
+    justify-content: space-around;
+    align-items: center;
     height: 650px;
     width: 650px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.271);
-    position: absolute;
-    z-index: -1;
-    margin-top: 25px;
-    margin-left: 455px;
-}
-#main{
-    margin-top: 50px;
 }
 #heading{
     font: italic;
-    font-size: 20px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #E0E0E0;
-    padding-right: 35px;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 #game{
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    padding-right: 10px;
-}
-#game1{
     width: 500px;
     height: 100%;
     /*background-color: gray;*/
@@ -55,7 +53,7 @@ body{
 #reset{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
 }
 #reset1{
     width: 110px;
